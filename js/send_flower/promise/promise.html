@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //两秒事A
+        //再事B，3s
+        //最后well done
+        let p1 = new promise((resolve,reject)=>{
+            console.log('开始任务');
+            setTimeout(() => {
+                console.log('A done')
+                resolve();
+            },2000)
+        });
+        let p2 = new promise((resolve,reject)=>{
+            setTimeout(() => {
+                resolve();
+            },3000)
+        });
+        p1
+            .then(()=>{
+                let p2 = new promise((resolve,reject)=>{
+                    setTimeout(() => {
+                        console.log('B done')
+                        resolve();
+                    },3000)
+                });
+            })
+    </script>
+</body>
+</html>
