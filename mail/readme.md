@@ -9,3 +9,12 @@
          @vant/weapp/button/index
    - API在哪里
       商品列表
+      apifm-wxapic提供数据
+   - 电商项目感觉
+      搜索
+      导航
+      banners
+      推荐
+      商品列表
+   - 总结一下搜索体验 
+      placeholder + padding-left + bindinput + bindConfirm + search 图标

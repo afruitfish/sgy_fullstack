@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <img alt="" id="avater"/>
+  <script>
+    const strAvater = 'https://img.36krcdn.com/20201227/v2_72db45cdf79747ab8611214166354dd6_img_jpg';
+    const oAvatar = document.querySelector('#avater');
+    // console.log(typeof oimg);
+    const oimg = new Image();//url -> proxy -> http -> request -> response 网络层
+    oimg.src = strAvater;//浏览器里启动了一个网络进程,下载图片
+    oimg.onload = function(){
+      //http response over 
+      oAvatar.src = strAvater;
+    }
+  </script>
+</body>
+</html>
