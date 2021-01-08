@@ -14,3 +14,11 @@
 
 3. Object.prototype.toString.call()
     Object是啥prototype是啥call 啥
+## 继承的几种方式
+1. 构造函数
+call apply 借用
+call绑定this,...
+2. prototype模式
+3. 直接继承prototype
+4. 空对象中介
+

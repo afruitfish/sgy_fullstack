@@ -1,0 +1,24 @@
+<view class="page bg-img padding-tb-xl">
+  <view class="flex padding justify-center margin-top-lg mt200" style="margin-top:200rpx;">
+    <image src="https://7367-sgy-9ggwk16w06fc07df-1304723824.tcb.qcloud.la/1.png?sign=384604a23db35bbb1c22c12e7b1551c5&t=1610108123" mode="widthFix"/>
+  </view>
+  <view class="flex justify-center">
+    <text class="text-xl text-white">
+    悦拍屋
+    </text>
+  </view>
+  <view class="jusify-start text-white margin-top-xl text-xl" id="title1">
+    <view class="padding">放心拍, 随心拍</view>
+  </view>
+  <view class="jusfity-end text-white text-xl" id="title2">
+    <view class="padding text-blue">镜头记录点滴美好</view>
+  </view>
+  <view class="padding flex justify-center radius" id="title3">
+    <button 
+    loading="{{loading}}"
+    open-type="getUserInfo"
+    bindgetuserinfo="getUserInfo"
+    type="primary"
+    class="cu-btn bg-skyBlue margin-bt-sm lg solid s">登录</button>
+  </view>
+</view>

@@ -1,0 +1,11 @@
+/* pages/login/login.wxss */
+.bg-img{
+
+  background-image: url('https://7367-sgy-9ggwk16w06fc07df-1304723824.tcb.qcloud.la/bgimg.png?sign=2801938ca590c3f956af410b436ec813&t=1610107487');
+}
+.mt200{
+    margin-top: 200rpx;
+}
+.mt200 image{
+  width: 20%;
+}

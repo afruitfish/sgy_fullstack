@@ -1,7 +1,7 @@
 //阮一峰面向对象2
 function Animal(name){
     console.log(arguments);
-    this.name = name
+    this.name = name;
     this.species = "动物";
 }
 // console.log(Animal);
