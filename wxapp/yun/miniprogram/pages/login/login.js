@@ -24,6 +24,9 @@ Page({
         this.setData({
           loading:false
         })
+      wx.switchTab({
+        url: '/pages/index/index',
+      })
       }
     })
   },
