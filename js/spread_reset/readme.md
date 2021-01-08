@@ -1,0 +1,3 @@
+- spread 运算符展开字符串 [...string]
+- map 数组每一项返回callback  总体返回一个新数组
+- join 数组换成字符串[A,B,V].join("")='ABV'
