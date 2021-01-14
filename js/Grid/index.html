@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CSS最新的布局方案Grid Flex的兄弟</title>
-  <link rel="stylesheet" href="./grid.css">
+  <!-- <link rel="stylesheet" href="./grid.css"> -->
   <style>
     .container {
         height: 100vh;
@@ -51,16 +51,16 @@
     <div class="box">12</div>
   </div>
   <script>
-//   const boxes = document.querySelectorAll('.box');
-//   let i = 1;
-//   for (let box of boxes) {
-//     // 在JS 里可以操作一切的CSS , 是王者 
-//     // html document.createElment 
-//     // CSS  ele.style
-//     // 驼峰式命名
-//     i++;
-//     box.style.backgroundColor = `rgba(${i * 20}, ${i * 10}, ${i * 5})`
-//   }
+  const boxes = document.querySelectorAll('.box');
+  let i = 1;
+  for (let box of boxes) {
+    // 在JS 里可以操作一切的CSS , 是王者 
+    // html document.createElment 
+    // CSS  ele.style
+    // 驼峰式命名
+    i++;
+    box.style.backgroundColor = `rgba(${i * 20}, ${i * 10}, ${i * 5})`
+  }
   </script>
 </body>
 </html>
