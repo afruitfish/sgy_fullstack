@@ -1,8 +1,8 @@
-- gitbash 是个linux 最小化战场
-- grep 命令
-    grep moon monkey
-    -v 反向
-    -c 统计行数
-    -i 大小写混淆
-    -n 附带行号
-    ^ 开始
+linux + docker + k8s
+- 文件 readme.md输出到命令行
+- git bash是一个小型linux
+- seq 10 20 >>spring
+
+- 基于文件找到996开头的内容
+正则 + linux grep
+-  | 管道 
