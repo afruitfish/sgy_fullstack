@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM操作测试</title>
+  <link rel="stylesheet" href="./css.css"> -->
+</head>
+
+<body>
+  <div id="container"></div>
+  <script>
+    var a = "<span>我是一个小测试</span>";
+    for (var count = 0; count < 14; count++) {
+      a += a;
+    }
+    document
+      .getElementById('container')
+      .innerHTML = a;
+
+  </script>
+</body>
+
+</html>
