@@ -1,0 +1,43 @@
+<scroll-view 
+	scroll-x="true" 
+	class="scroll-view-x" 
+	style="padding-top:10rpx" 
+	scroll-with-animation="true"
+	scroll-left='0' 
+	bindscroll="getleft">
+	
+	<!--内容区域-->
+	<!-- 第一行 -->
+	<view>
+		<view 
+			class="navigator_second" 
+			wx:for="{{tlist.line1}}"
+			wx:key="index"
+			bindtap="getProductList"
+			data-id="{{index}}"
+		>
+			<image class="navigator_icon" src="https://static.zzzw666.top/img/mock/common/default.png"></image>
+			<text class="navigator_text">热销{{item}}</text>
+		</view>
+	</view>
+	<!-- 第二行 -->
+	<view wx:if="{{tlist.line2.length > 0}}">
+		<view class="navigator_second" 
+			wx:for="{{tlist.line2}}"
+			wx:key="index"
+			data-id="{{index}}"
+			bindtap="getProductList"
+		>
+			<image class="navigator_icon" src="https://static.zzzw666.top/img/mock/common/default.png"></image>
+			<text class="navigator_text">热销{{item}}</text>
+		</view>
+	</view>
+</scroll-view>
+
+<!--滚动条部分-->
+<view wx:if="{{slideShow}}" class="slide">
+	<view class='slide-bar'>
+		<view class="slide-show" 
+			style="width:{{slideWidth}}rpx; margin-left:{{slideLeft<=1 ? 0 : slideLeft+'rpx'}};"></view>
+	</view>
+</view>

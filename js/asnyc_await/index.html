@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //2个ajax
+        //callback会回调地狱
+        //asnyc await
+        //promise
+        function ajax(url,fn){
+            //ajsx 函数
+            let xhr=new XMLHttpRequest();
+            xhr.open('GET',url)
+            xhr.onreadystatechange = function(){
+                if(xhr.readyState === 4 && xhr.status == 200){
+                    fn(JSON.parse(xhr.responseText))
+                }
+            }
+            xhr.send();
+        }
+    </script>
+</body>
+</html>
