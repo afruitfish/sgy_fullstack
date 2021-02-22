@@ -1,0 +1,21 @@
+.conatainer{
+  width: 600rpx;
+  height: 2500rpx;
+  background-color:#ED505B;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.c1{
+  width: 296rpx;
+  height: 400rpx;
+  background-color: #00C625;
+  border: red 2rpx solid;
+}
+.c2{
+  width:296rpx;
+  height: 500rpx;
+  background-color: palevioletred;
+  
+  border: red 2rpx solid;
+}

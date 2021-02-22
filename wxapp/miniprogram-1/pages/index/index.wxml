@@ -1,0 +1,3 @@
+<view class="conatainer" wx:for="{{itemlist}}">
+  <view class="c1">{{item.type}}</view>
+</view>

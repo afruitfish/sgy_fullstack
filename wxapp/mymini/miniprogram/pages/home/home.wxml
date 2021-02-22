@@ -31,14 +31,15 @@
   <!--内容区域-->
   <!-- 第一行 -->
   <view>
-    <view class="navigator_second" wx:for="{{tlist.line1}}" wx:key="index" bindtap="getProductList" data-id="{{index}}">
-      <text>热销{{item}}</text>
+    <view class="navigator_second" wx:for="{{tlist.line1}}" wx:key="index" data-id="{{index}}">
+      <text>{{item.id}}</text>
     </view>
   </view>
   <!-- 第二行 -->
   <view wx:if="{{tlist.line2.length > 0}}">
-    <view class="navigator_second" wx:for="{{tlist.line2}}" wx:key="index" data-id="{{index}}" bindtap="getProductList">
-      <text>热销{{item}}</text>
+    <view class="navigator_second" wx:for="{{tlist.line2}}" wx:key="index" data-id="{{index}}">
+      <image class="navigator_icon" src="{{item.src}}"></image>
+      <text>{{item.id}}</text>
     </view>
   </view>
 </scroll-view>
@@ -49,3 +50,44 @@
     </view>
   </view>
 </view>
+<view class="bgc">
+  <view class="block1" />
+  <view class="select-menu">
+    <view class="title2">
+      <image src="../../images/icon/headtitle.png"></image>
+      <text decode="{{true}}" space="{{true}}">省钱秘籍 </text>
+    </view>
+  </view>
+  <view class="block1" />
+</view>
+<scroll-view class="select-bar" scroll-x="true" scroll-with-animation="true" scroll-left='0'>
+  <view class="tag" wx:for="{{tags}}" wx:key="id">
+    <view data-id="{{item.id}}" class="{{activeTypeId === item.id? 'tag1green':'tag1'}}" wx:if="{{item.tagType}}"
+      bindtap="typeSwitch">
+      <text style="display: block;width: 100%;font-size: 35rpx;font-weight: bold;">{{item.tag}}</text>
+      <text class="text2">{{item.describe}}</text>
+    </view>
+    <view data-id="{{item.id}}" class=" {{activeTypeId === item.id? 'tag2green':'tag2'}}" wx:else bindtap="typeSwitch">
+      <image class="im" src="{{item.tag}}"></image>
+      <text class="text2" style="margin-top: 10rpx;">{{item.describe}}</text>
+    </view>
+    <view class="border1"></view>
+  </view>
+</scroll-view>
+<view>
+  <image class="ad" src="{{ad}}" ></image>
+</view>
+<view class="can">
+  <view class="container1" style="height:{{containerlengh}}rpx;">
+    <view wx:for="{{itemlist1}}">
+      <view class="{{item.type == 1? 'c1':'c2'}}"></view>
+    </view>
+  </view>
+  <view class="container1" style="height:{{containerlengh}}rpx;">
+    <view wx:for="{{itemlist2}}">
+      <view class="{{item.type == 1? 'c1':'c2'}}"></view>
+    </view>
+  </view>
+</view>
+
+<view class="block"></view>

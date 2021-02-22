@@ -43,9 +43,6 @@ var recoverSecret = function (triplets) {
         if (i >= triplets.length) {
             i = 0
         }
-        // console.log(triplets)
-        // console.log("ans  " + ans)
-        // console.log(i)
     }
     return ans.join('')
 }
