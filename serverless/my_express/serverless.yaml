@@ -1,0 +1,6 @@
+component: express 
+name: my_express
+express:
+  inputs:
+    src: ./app.js
+    region: ap-shanghai

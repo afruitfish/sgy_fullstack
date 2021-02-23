@@ -1,0 +1,16 @@
+{
+  "deployed": {
+    "Name": "express_component_zccb05",
+    "Runtime": "Nodejs8.9",
+    "Handler": "serverless-handler.handler",
+    "MemorySize": 128,
+    "Timeout": 3,
+    "Region": "ap-shanghai",
+    "Namespace": "default",
+    "Description": "This is a function created by serverless component",
+    "layers": []
+  },
+  "codeHash": "d44689cbd16d7dd3712e58b60600409b",
+  "Bucket": "sls-cloudfunction-ap-shanghai-code",
+  "Key": "sls-cloudfunction-default-express_component_zccb05-1614086129.zip"
+}

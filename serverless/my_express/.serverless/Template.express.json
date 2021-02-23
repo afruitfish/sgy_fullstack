@@ -1,0 +1,18 @@
+{
+  "functionName": "express_component_zccb05",
+  "functionOutputs": {
+    "Name": "express_component_zccb05",
+    "Runtime": "Nodejs8.9",
+    "Handler": "serverless-handler.handler",
+    "MemorySize": 128,
+    "Timeout": 3,
+    "Region": "ap-shanghai",
+    "Namespace": "default",
+    "Description": "This is a function created by serverless component",
+    "layers": []
+  },
+  "region": "ap-shanghai",
+  "apiGatewayServiceId": "service-dxbykrgn",
+  "url": "http://service-dxbykrgn-1253398446.sh.apigw.tencentcs.com/release/",
+  "cns": []
+}

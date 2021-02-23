@@ -1,0 +1,22 @@
+{
+  "protocols": [
+    "http"
+  ],
+  "subDomain": "service-dxbykrgn-1253398446.sh.apigw.tencentcs.com",
+  "environment": "release",
+  "region": "ap-shanghai",
+  "service": {
+    "value": "service-dxbykrgn",
+    "created": true
+  },
+  "apis": [
+    {
+      "path": "/",
+      "method": "ANY",
+      "apiId": {
+        "value": "api-8kel1yyq",
+        "created": true
+      }
+    }
+  ]
+}
