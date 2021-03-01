@@ -1,0 +1,1 @@
+console.log((12345678).toString(2))
