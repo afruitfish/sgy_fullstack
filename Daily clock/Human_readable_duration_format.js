@@ -14,6 +14,7 @@ function formatDuration(seconds) {
         }
         if(date[i][0]>0){
             ans+=', '+date[i][0]+' '+date[i][1]
+            console.log(ans)
             k++;
         }
     }

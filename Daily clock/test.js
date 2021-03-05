@@ -19,3 +19,4 @@ console.log(a)
 console.log(a[1]=='')
 a.splice(1,1)
 console.log(a)
+
