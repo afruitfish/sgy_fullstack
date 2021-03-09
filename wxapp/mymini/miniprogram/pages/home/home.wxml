@@ -1,7 +1,7 @@
 <!--pages/home/home.wxml-->
 <!-- 414 896 -->
 <view class="bgimg">
-  <view class="title">京东到家</view>
+  <view class="title"></view>
   <view class="location">
     <image src="../../images/icon/location.png" />
     <view>location</view>
