@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        margin: 10px;
+        display: flex;
+        width: 500px;
+        height: 200px;
+        background-color: #eee;
+        color: #666;
+        text-align: center;
+    }
+
+    .a {
+        background-color: #f46;
+        width: 300px;
+    }
+
+    .b {
+        flex-shrink: 2;
+        width: 150px;
+        background-color: #426983;
+    }
+    .c{
+        flex-shrink: 3;
+        width: 200px;
+        background-color: #61dafb;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="a"></div>
+        <div class="b"></div>
+        <div class="c"></div>
+    </div>
+</body>
+
+</html>
