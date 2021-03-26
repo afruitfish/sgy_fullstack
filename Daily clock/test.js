@@ -1,5 +1,6 @@
-let a =[[1, 2, 3],
-        [8, 9, 4],
-        [7, 6, 5]]
-console.log(a.length)
-console.log(a[0].length)
+let j=0
+for(let i=0;i<4;i++){
+        j=i;
+        console.log(j);
+}
+console.log(j);

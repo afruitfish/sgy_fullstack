@@ -1,0 +1,3 @@
+type FunctionProps = {
+    onSomething:Function
+}
