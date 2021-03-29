@@ -1,6 +1,6 @@
 import dotenv from 'dotenv';
 dotenv.config();
-console.log(process.env);
+// console.log(process.env);
 // www.baidu.com:3000 
 // www.baidu.com
 // nginx 

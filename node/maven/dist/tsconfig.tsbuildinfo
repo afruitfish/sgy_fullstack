@@ -517,7 +517,7 @@
         "affectsGlobalScope": false
       },
       "../src/app/app.config.ts": {
-        "version": "2e7d3aade784c405f5e3f17c86c0e7005909a91a2cd9bbf78792ea0fa0806919",
+        "version": "304d3ae5395e7f6aac662020d50155b5a59129262d7ec078f72e780aee833b90",
         "signature": "ec28289125e086a01a0785cc1378535faecc20c05b9c3b66e318437b2f444f42",
         "affectsGlobalScope": false
       },
@@ -546,13 +546,38 @@
         "signature": "0747134fc57c8e4a12d6144952ae1f47f54848f1ca110e997bd81ec1cc7b76e6",
         "affectsGlobalScope": false
       },
+      "../src/user/user.model.ts": {
+        "version": "27cde39a39a61dd2ceea8ecb11862dc31672506358a962a2d967bf1419fde1e5",
+        "signature": "0a81e7b05b4dd73cd7fb6b6b9c87c9432fb722f342a0c306bd546bd7ac449a8e",
+        "affectsGlobalScope": false
+      },
+      "../src/user/user.service.ts": {
+        "version": "589c34799a79198a59fa757946a14916edc23b25ad3c9197588ed7147dc5b6a0",
+        "signature": "fd5d929073064f499e8bc922a0ac22308b62f9f1e82e3f23c676d1bf54beb9bb",
+        "affectsGlobalScope": false
+      },
+      "../src/user/user.middleware.ts": {
+        "version": "57c7352bb16a634d6056a6720b56a9f2f7c91ddf675ecdb2a57ac1f35bd818e0",
+        "signature": "0f8032a999329a0891af247a202a9bd46d7e08218214522786e2537ed68a665f",
+        "affectsGlobalScope": false
+      },
+      "../src/user/user.controller.ts": {
+        "version": "64fa50f0eb1660d23921526db0dcc4c2b77a357ade01dca21b293b82f03a994f",
+        "signature": "fcf2e769eaafe7b21ed379b803f627be68a342ab8166e73a4c36b5bb0930ee3a",
+        "affectsGlobalScope": false
+      },
+      "../src/user/user.router.ts": {
+        "version": "391d6a72dc50504a972d70307e634459a0cfdfd34b296eabbdd894991ad24d0d",
+        "signature": "0747134fc57c8e4a12d6144952ae1f47f54848f1ca110e997bd81ec1cc7b76e6",
+        "affectsGlobalScope": false
+      },
       "../src/app/app.middleware.ts": {
         "version": "2dc816ff24a14bb69c90501fdac346cee32922379252306206dc033713e89532",
         "signature": "152f26526d435ae3487f21ccc6347e0e415b42db2c0dbde269cb8a99227f57a4",
         "affectsGlobalScope": false
       },
       "../src/app/index.ts": {
-        "version": "f08e2a14dc54bd7c0e0f432fd16e4994dd1220eeffaa88c8419bd32ae448b3b5",
+        "version": "0cbf620d16555c09efc083029cf9d1eb1e566a4f3f8866411b4e4bd8c04ba13d",
         "signature": "629a4ade941bd431c195407a5afd3602c6461fdcc0f65735b7e4a68f8d5d3d51",
         "affectsGlobalScope": false
       },
@@ -901,7 +926,8 @@
       "../src/app/index.ts": [
         "../node_modules/@types/express/index.d.ts",
         "../src/app/app.middleware.ts",
-        "../src/post/post.router.ts"
+        "../src/post/post.router.ts",
+        "../src/user/user.router.ts"
       ],
       "../src/auth/auth.middleware.ts": [
         "../node_modules/@types/express/index.d.ts"
@@ -923,6 +949,23 @@
       "../src/post/post.service.ts": [
         "../src/app/database/mysql.ts",
         "../src/post/post.model.ts"
+      ],
+      "../src/user/user.controller.ts": [
+        "../node_modules/@types/express/index.d.ts",
+        "../src/user/user.service.ts"
+      ],
+      "../src/user/user.middleware.ts": [
+        "../node_modules/@types/express/index.d.ts",
+        "../src/user/user.service.ts"
+      ],
+      "../src/user/user.router.ts": [
+        "../node_modules/@types/express/index.d.ts",
+        "../src/user/user.controller.ts",
+        "../src/user/user.middleware.ts"
+      ],
+      "../src/user/user.service.ts": [
+        "../src/app/database/mysql.ts",
+        "../src/user/user.model.ts"
       ]
     },
     "exportedModulesMap": {
@@ -1258,6 +1301,21 @@
         "../node_modules/mysql2/typings/mysql/lib/protocol/packets/resultsetheader.d.ts",
         "../node_modules/mysql2/typings/mysql/lib/protocol/packets/rowdatapacket.d.ts",
         "../src/post/post.model.ts"
+      ],
+      "../src/user/user.controller.ts": [
+        "../node_modules/@types/express/index.d.ts"
+      ],
+      "../src/user/user.middleware.ts": [
+        "../node_modules/@types/express/index.d.ts"
+      ],
+      "../src/user/user.router.ts": [
+        "../node_modules/@types/express-serve-static-core/index.d.ts"
+      ],
+      "../src/user/user.service.ts": [
+        "../node_modules/mysql2/typings/mysql/lib/protocol/packets/okpacket.d.ts",
+        "../node_modules/mysql2/typings/mysql/lib/protocol/packets/resultsetheader.d.ts",
+        "../node_modules/mysql2/typings/mysql/lib/protocol/packets/rowdatapacket.d.ts",
+        "../src/user/user.model.ts"
       ]
     },
     "semanticDiagnosticsPerFile": [
@@ -1372,7 +1430,12 @@
       "../src/post/post.controller.ts",
       "../src/post/post.model.ts",
       "../src/post/post.router.ts",
-      "../src/post/post.service.ts"
+      "../src/post/post.service.ts",
+      "../src/user/user.controller.ts",
+      "../src/user/user.middleware.ts",
+      "../src/user/user.model.ts",
+      "../src/user/user.router.ts",
+      "../src/user/user.service.ts"
     ]
   },
   "version": "4.2.3"

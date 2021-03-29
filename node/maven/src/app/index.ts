@@ -2,6 +2,7 @@
 // es6 模块化 typescript => js
 import express from 'express';
 import postRouter from '../post/post.router'
+import userRouter from '../user/user.router'
 import { defaultErrorHandler } from './app.middleware'
 const app = express();
 const bodyParser = require('body-parser');
@@ -14,6 +15,7 @@ app.use(bodyParser.urlencoded());
 app.use( // 函数
     // 文章模块的路由 增删改查
     postRouter,
+    userRouter
     // 用户路由
     // ...
 );
