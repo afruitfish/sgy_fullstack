@@ -26,8 +26,13 @@
 // };
 // console.log(trap([0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1]));
 
-a = [1, 2, 3]
-b = [4, 5, 6]
-c = [...a, ...b]
-d = a.concat(b)
-console.log(a, b, c, d);
+// a = [1, 2, 3]
+// b = [4, 5, 6]
+// c = [...a, ...b]
+// d = a.concat(b)
+// console.log(a, b, c, d);
+
+
+console.log(/[0-9]/.test("asdfgasdgsdaq4fdsgdsg"))
+console.log(/[0-9]/.test("asdfgasdgsdaqfdsgdsg"))
+console.log("saf scdsffdsgd4 dsfdsgsd".match(/[0-9]/).toString());
