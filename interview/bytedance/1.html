@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function debounce(func, wait, immediate) {
+        var timeout, result;
+
+        var debounced = function () {
+            var context = this;
+            var args = arguments;
+            console.log(timeout);
+            if (timeout) {
+                console.log(timeout, "cleartimeout");
+                clearTimeout(timeout);
+            }
+            if (immediate) {
+                console.log(immediate, "immediate");
+                // 如果已经执行过，不再执行
+                var callNow = !timeout;
+                timeout = setTimeout(function () {
+                    timeout = null;
+                }, wait)
+                if (callNow) {
+                    console.log(callNow, "callnow");
+                    result = func.apply(context, args)
+                }
+            } else {
+                console.log("else");
+                timeout = setTimeout(function () {
+                    func.apply(context, args)
+                }, wait);
+            }
+            return result;
+        };
+
+        debounced.cancel = function () {
+            clearTimeout(timeout);
+            timeout = null;
+        };
+
+        return debounced;
+    }
+
+    const a = () => (
+        console.log(1)
+    )
+
+    const set = debounce(a, 10000, true)
+</script>
+
+<body>
+    <button onclick="set()">console</button>
+</body>
+
+</html>
