@@ -96,6 +96,7 @@ console.log(content);
 
 try {
     fs.mkdirSync('./dist')
+    fs.writeFileSync('./dist/bundle.js', content)
 }
 catch {
     fs.writeFileSync('./dist/bundle.js', content)

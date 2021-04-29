@@ -5,11 +5,13 @@ import Notes from './components/Notes';
 
 
 function App() {
+  let list = [1, 2, 3, 4]
+  const handleclick = (e) => {
+    console.log(e.target.value);
+  }
   return (
     <div className="App">
-      <Notes />
-      {/* <TodoList /> */}
-      {/* <Button type="primary">点击</Button> */}
+      <input className='test' onClick={handleclick}></input>
     </div>
   );
 }

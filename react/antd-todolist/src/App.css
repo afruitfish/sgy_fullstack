@@ -1,6 +1,6 @@
 /* @import '~antd/dist/antd.css'; */
-@import '~semantic-ui-css/semantic.min.css';
 
+@import '~semantic-ui-css/semantic.min.css';
 .App {
   text-align: center;
 }
@@ -38,4 +38,10 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.test {
+  background-color: rgb(241, 238, 238);
+  height: 100px;
+  width: 100px;
 }

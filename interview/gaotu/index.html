@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .routerView {
+        height: 100px;
+        width: 100px;
+    }
+</style>
+
+<body>
+    <ul>
+        <li><a href="/home">home</a></li>
+        <li><a href="/host">host</a></li>
+    </ul>
+    <div class="routerView"></div>
+</body>
+<!-- <script>
+    var view = document.getElementsByClassName('routerView')[0]
+    console.log(view);
+    window.addEventListener('hashchange', () => {
+        switch (location.hash) {
+            case '#/home':
+                console.log(1);
+                view.innerHTML = 'this is home';
+                return
+            case '#/host':
+                console.log(2);
+                view.innerHTML = 'this is host';
+                return
+            default:
+                console.log(3);
+                view.innerHTML = ''
+                return
+        }
+    })
+</script> -->
+<script>
+    var view = document.getElementsByClassName('routerView')[0]
+    var linkList = document.querySelectorAll('a')
+    linkList.forEach((node) => {
+        node.addEventListener('click', (e) => {
+            e.preventDefault()
+            history.pushState(null, '', node.getAttribute('href'))
+            pop()
+        })
+    })
+    const pop = () => {
+        console.log(location.pathname);
+        switch (location.pathname) {
+            case '/home':
+                console.log(1);
+                view.innerHTML = 'this is home';
+                return
+            case '/host':
+                console.log(2);
+                view.innerHTML = 'this is host';
+                return
+            default:
+                console.log(3);
+                view.innerHTML = ''
+                return
+        }
+    }
+    window.addEventListener('popstate', pop())
+</script>
+
+</html>

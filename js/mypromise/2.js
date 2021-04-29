@@ -1,0 +1,1 @@
+var promise = require('./1.js');
